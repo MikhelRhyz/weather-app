@@ -1,0 +1,42 @@
+body {
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  font-family: "Poppins", sans-serif;
+}
+
+.weather-card {
+  width: 350px;
+  border-radius: 16px;
+  background-color: #ffffffcc;
+  backdrop-filter: blur(8px);
+}
+
+.temp-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+#temperature {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+#weatherInfo {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
